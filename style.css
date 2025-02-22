@@ -1,0 +1,98 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: burlywood;
+    margin: 0 auto;
+}
+.container{
+    margin: 50px auto;
+    padding: 20px;
+    background: lightpink;
+    width: 300px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px 10px rgba(5, 224, 253, 0.366);
+}
+
+h1{
+    color: #333;
+}
+#current-time{
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.alarm-set{
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+input[type="datetime-local"] {
+    padding: 5px;
+    font-size: 16px;
+}
+
+button{
+    padding: 8px 15px;
+    margin: 5px;
+    border: box;
+    box-shadow: 2rem;
+    border-radius: 2rem;
+    background: transparent;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: aquamarine;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+   background: #ddd; 
+   padding: 10px;
+   margin: 5px 0;
+   display: flex;
+   justify-content: space-between;
+   border-radius: 5px;
+}
+
+.toggle-btn{
+    background: darkorange;
+    color: aliceblue;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toggle-btn:hover{
+    background: darkcyan;
+}
+
+.delete-btn{
+    background: darkmagenta;
+    color: bisque;
+    border: navy;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.delete-btn:hover{
+    background: darkorange;
+}
+
+.hidden{
+    display: none;
+}
+
+#alarm-controls{
+    margin-top: 20px;
+}
+
+

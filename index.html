@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Alarm Clock</h1>
+        <div id="current-time">00:00:00 - YYYY-MM-DD</div>
+
+        <div class="alarm-set">
+            <label for="alarm-datetime">Set Alarm:</label>
+            <input type="datetime-local" id="alarm-datetime">
+            <button onclick="setAlarm()">Set Alarm</button>
+        </div>
+
+        <ul id="alarm-list"></ul>
+
+        <!-- Alarm Controls (Dismiss & Snooze) -->
+         <div id="alarm-controls" class="hidden">
+            <button id="dismiss-btn" onclick="dismissAlarm()">Dismiss</button>
+            <button id="snooze-btn" onclick="snoozeAlarm()">Snooze (5 min)</button>
+         </div>
+    </div>
+
+    <audio id="alarm-sound" src="Alarm.mp3"></audio>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
